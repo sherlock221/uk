@@ -5,7 +5,6 @@
 var React = require("react-native");
 var SearchResult = require('./SearchResult');
 
-
 function urlForQueryAndPage(key, value, pageNumber) {
     var data = {
         country: 'uk',
@@ -38,7 +37,6 @@ var {
 
 
 var SearchPage = React.createClass({
-
 
     //初始化
     getInitialState: function () {
@@ -94,6 +92,8 @@ var SearchPage = React.createClass({
 
 
     },
+
+
     //改变
     onSearchTextChanged : function(event){
         console.log('onSearchTextChanged');
@@ -137,7 +137,7 @@ var SearchPage = React.createClass({
                     </TouchableHighlight>
                 </View>
 
-                <TouchableHighlight style={styles.button} underlayColor='#99d9f4'>
+                <TouchableHighlight   style={styles.button} underlayColor='#99d9f4'>
                     <Text style={styles.buttonText}>Location</Text>
                 </TouchableHighlight>
 
